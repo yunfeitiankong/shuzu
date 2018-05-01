@@ -1,0 +1,43 @@
+<doctype>
+	<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			function add(num1, num2){
+				return num1 + num2;
+			}
+			var sum;
+			sum = add(421,342);
+			document.write(sum + "<br>");
+			sum = add(421,342);
+			document.write(sum + "<br>");
+		</script>
+		<script>
+			var scores = [20,25,89,64,54,32,342,134];
+			scores[0] = 666;
+			var i = 0
+			while (i<7){
+				document.write(scores + "<br>")
+				i++
+			}
+		</script>
+		<script>
+			var scores = [10,23,44,59,89,45,70,90];
+			var names = ['alex', 'luna', 'maite', 'tom', 'jerry'];
+			var mixed = ['alex', 33, 'tom', 666];
+			scores[0] = 666;
+			function showArr(arr) {
+				var i = 0;
+				while ( i < arr.length) {
+					document.write(arr[i] + "<br>");
+					i++;
+				}
+				document.write("<br>");
+			}
+			showArr(scores);
+			showArr(names);
+			showArr(mixed);
+		</script>
+	</body>
+	</html>
